@@ -63,15 +63,25 @@ section {
   margin: 0 1rem 1rem;
 }
 
-.project-card a {
-  display: block;
-  text-align: center;
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.project-links a {
+  display: inline-block;
   background-color: #333;
   color: #fff;
   padding: 0.5rem;
+  border-radius: 10%;
   text-decoration: none;
 }
 
-.project-card a:hover {
+.project-links a:hover {
   background-color: #555;
+}
+
+.project-links a:first-of-type {
+  margin-right: 0.5rem;
 }
