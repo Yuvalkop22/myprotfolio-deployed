@@ -40,7 +40,7 @@ section {
 }
 
 .project-card {
-  width: calc(33.33% - 1rem);
+  width: 100%;
   margin-bottom: 2rem;
   background-color: #f2f2f2;
   border-radius: 0.5rem;
@@ -48,11 +48,23 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+@media screen and (min-width: 768px) {
+  .project-card {
+    width: calc(33.33% - 1rem);
+  }
+}
+
 .project-card img {
   display: block;
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .project-card img {
+    height: auto;
+  }
 }
 
 .project-card h3 {
@@ -84,4 +96,50 @@ section {
 
 .project-links a:first-of-type {
   margin-right: 0.5rem;
+}
+
+.contact {
+  color: white;
+  background-color: #333;
+  padding: 2rem;
+}
+
+.contact a {
+  color: white;
+}
+
+.about {
+  background-color: #f2f2f2;
+  padding: 2rem;
+}
+/* Styles for screens larger than 768px */
+@media screen and (max-width: 768px) {
+  .about {
+    text-align: center;
+  }
+  .contact{
+    text-align: center;
+  }
+}
+
+.unitimg {
+  height: 5%;
+  width: 5%;
+  border-radius: 200%;
+}
+
+.bank-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.mil-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.bankimg {
+  height: 5%;
+  width: 5%;
+  border-radius: 200%;
 }
